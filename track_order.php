@@ -147,6 +147,46 @@ $order_items = $stmt->fetchAll(PDO::FETCH_ASSOC);
             color: var(--dark);
         }
 
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: var(--light);
+            border-radius: var(--border-radius-sm);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        thead {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        td {
+            font-size: 0.95rem;
+            color: var(--dark);
+        }
+
+        tr:hover {
+            background: var(--light);
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
         .tracking-container {
             margin-top: 40px;
         }
